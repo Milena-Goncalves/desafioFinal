@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #2D2D2D; */
+}
+
+.topo{
+    background-image: url("/star/star uó topo.png");
+     background-repeat: no-repeat;
+     background-size: cover; 
+     /* display: flex;
+     justify-content: center;
+     background-position: bottom 100px center; */
+     background-position: center center;
+    
+}
+
+.kylo{
+    width: 50%;
+    padding-right: 12.5%;
+    /* position: relative;
+    top: 200px; */
+    
+}
