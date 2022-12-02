@@ -96,3 +96,11 @@
     top: -4px; 
     height: 800px;
 }
+.menu{
+    position: absolute;
+    right: 27%;
+    bottom: 158px; 
+    width: 24%;
+    z-index: 10;
+    z-index: 10;
+}
