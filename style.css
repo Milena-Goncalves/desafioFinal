@@ -9,17 +9,67 @@
     background-image: url("/star/star uó topo.png");
      background-repeat: no-repeat;
      background-size: cover; 
-     /* display: flex;
-     justify-content: center;
-     background-position: bottom 100px center; */
      background-position: center center;
     
 }
 
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+
 .kylo{
-    width: 50%;
-    padding-right: 12.5%;
-    /* position: relative;
-    top: 200px; */
+    width: 60%;
+    height: 80%;
+    position: relative;
+    top: 100px; 
+    left: -4%;
     
+}
+
+.star{
+    width: 20%;
+    position: absolute;   
+    left: 24%;
+    bottom: 39%;   
+}
+
+.wars{
+    width: 23%;
+    position: absolute;   
+    right: 13%;
+    bottom: 39%;   
+}
+.legiao{
+    position: absolute;
+    width: 8.5%;
+    right: 15%;
+    bottom: 150px;
+
+}
+.left-main{
+    position: relative;
+}
+.left-main .robo{
+    width: 45%;
+}
+
+.comeceJogar {
+    position: absolute;
+    left: 17%;
+    top: -40px; 
+    width: 20%;
+}
+
+.sobre-jogo{
+    position: absolute;
+    right: 12%;
+    top: 310px; 
+    width: 40%;
+}
+.linha2{
+    position: absolute;
+    right: 12%;
+    top: 600px; 
+    width: 73%;
 }
