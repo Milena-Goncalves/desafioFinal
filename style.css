@@ -1,106 +1,207 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: #2D2D2D; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.topo{
-     background-image: url("/star/star uó topo.png");
-     background-repeat: no-repeat;
-     background-size: cover; 
-     background-position: center center;
-    
+.flex {
+  display: flex;
 }
 
-.conteudo{
-    display: flex;
-    justify-content: center;
+.flex-center {
+  justify-content: center;
 }
 
-.kylo{
-    width: 60%;
-    height: 80%;
-    position: relative;
-    top: 100px; 
-    left: -4%;
-    
+.flex-column {
+  flex-direction: column;
 }
 
-.star{
-    width: 20%;
-    position: absolute;   
-    left: 24%;
-    bottom: 39%;   
+.relative {
+  position: relative;
 }
 
-.wars{
-    width: 23%;
-    position: absolute;   
-    right: 13%;
-    bottom: 39%;   
-}
-.legiao{
-    position: absolute;
-    width: 8.5%;
-    right: 15%;
-    bottom: 150px;
-
-}
-.left-main{
-    position: relative;
-}
-.left-main .robo{
-    width: 45%;
+.absolute {
+  position: absolute;
 }
 
-.comeceJogar {
-    position: absolute;
-    left: 17%;
-    top: -40px; 
-    width: 20%;
+.uppercase {
+  text-transform: uppercase;
 }
 
-.sobre-jogo{
-    position: absolute;
-    right: 12%;
-    top: 310px; 
-    width: 40%;
+/* Header */
+
+.header-topo {
+  background-image: url("/star/star uó topo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-.linha2{
-    position: absolute;
-    right: 12%;
-    top: 600px; 
-    width: 73%;
+
+.kylo {
+  width: 60%;
+  height: 80%;
+  top: 100px;
+  left: -4%;
 }
-.lord{
-    position: absolute;
-    left: 15%;
-    bottom: -70px; 
-    width: 50%;
-    z-index: 10;
+
+.star {
+  width: 20%;
+  left: 24%;
+  bottom: 39%;
 }
-.rey{
-    position: absolute;
-    right: 0%;
-    bottom: -90px; 
-    width: 24%;
-    z-index: 10;
+
+.wars {
+  width: 23%;
+  right: 13%;
+  bottom: 39%;
 }
-.seg-main .fundo{
-    background-image: url("/star/Retângulo 3.svg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center center;
-    position: relative;
-    top: -4px; 
-    height: 800px;
+
+.legiao {
+  width: 8.5%;
+  right: 15%;
+  bottom: 150px;
 }
-.menu{
-    position: absolute;
-    right: 27%;
-    bottom: 158px; 
-    width: 24%;
-    z-index: 10;
-    z-index: 10;
+
+/* Main */
+
+.main-topo {
+  background-image: url("star/sta uo robot@2x.png");
+  background-color: white;
+  background-position: left;
+  background-size: 65rem;
+  background-repeat: no-repeat;
+  min-height: 185vh;
+}
+
+/* .main-topo .robo {
+  width: 45%;
+} */
+
+.comece-a-jogar {
+  background-image: url("star/strom\ trupe\ red@2x.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -5rem;
+  left: 12%;
+  width: 32rem;
+  height: 50rem;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  padding: 5%;
+}
+
+.comece-a-jogar h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.comece-a-jogar p {
+  font-size: 1.65rem;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+  margin: 25% 0 25%;
+}
+
+.comece-a-jogar button {
+  border: 3px solid white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  width: 80%;
+  padding: 5%;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0) 50%,
+    black 50%
+  );
+  transition: background-position 1s;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.comece-a-jogar button:hover {
+  font-size: 2.25rem;
+  padding: 4.5%;
+  background-position: -100% 0;
+}
+
+.sobre-jogo {
+  position: absolute;
+  right: 12%;
+  top: 80rem;
+  width: 40%;
+}
+
+.linha2 {
+  position: absolute;
+  right: 12%;
+  bottom: -45rem;
+  width: 73%;
+}
+
+.main-estrutura {
+  justify-content: flex-end;
+}
+
+.menu {
+  width: 30rem;
+  position: relative;
+  right: 30%;
+}
+
+.estrutura {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  padding: 15% 0%;
+  text-align: right;
+}
+
+.lista-menu {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  list-style: none;
+  text-align: right;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+
+.lista-menu li {
+  padding: 5% 0%;
+}
+
+.lista-menu li:hover {
+  background: #ff5c3a;
+  color: white;
+  cursor: pointer;
+}
+
+.lord {
+  position: absolute;
+  left: 15%;
+  bottom: -108rem;
+  width: 50%;
+  z-index: 10;
+}
+
+.rey {
+  position: absolute;
+  right: 6%;
+  bottom: -108rem;
+  width: 25%;
+  z-index: 10;
+}
+
+.main-fundo .fundo {
+  background-image: url("/star/Retângulo 3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: -4px;
+  height: 800px;
 }
