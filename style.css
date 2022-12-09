@@ -154,7 +154,7 @@
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   font-size: 4rem;
-  padding: 15% 0%;
+  padding: 15% 0 2.5% 0;
   text-align: right;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .lista-menu li {
-  padding: 5% 0%;
+  padding: 5% 2.5%;
 }
 
 .lista-menu li:hover {
@@ -188,7 +188,7 @@
 .rey {
   position: absolute;
   right: 6%;
-  bottom: -108rem;
+  bottom: -110rem;
   width: 25%;
   z-index: 10;
 }
@@ -201,34 +201,91 @@
   position: relative;
   top: -4px;
 }
-.atributos {
+
+.atributos-descricao {
   color: white;
   font-family: "Dosis", sans-serif;
   font-size: 2.5rem;
   padding: 5% 17% 2%;
 }
-.img-um {
-  width: 50rem;
-}
-.imagens-dois-cinco {
+
+.atributos-img-grid {
   display: inline-grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
 }
+
+.img-um {
+  width: 50rem;
+}
+
 .img-dois,
 .img-tres,
 .img-quatro,
 .img-cinco {
   width: 25rem;
 }
+
+.img-wrapper:hover .overlay {
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  height: 110%;
+  width: 107.5%;
+  top: 0;
+  left: 0;
+  margin-top: -3.5%;
+  margin-left: -3.5%;
+  padding: 10%;
+  color: white;
+  transform: scale(0);
+  transition: transform 0.75s ease-in-out;
+}
+
+.overlay h2 {
+  font-size: 1.25rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.overlay .botao-atributos {
+  background: none;
+  font-size: 1rem;
+  padding: 1.5% 3%;
+  border: 2px solid white;
+}
+
+.img-um-overlay {
+  background: rgba(140, 20, 252, 0.5);
+}
+
+.img-dois-overlay {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.img-tres-overlay {
+  background: rgba(255, 204, 0, 0.5);
+}
+
+.img-quatro-overlay {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.img-cinco-overlay {
+  background: rgba(0, 255, 0, 0.5);
+}
+
 .hierarquia {
   width: 100rem;
   padding: 3% 0 0.75% 0;
 }
+
 .divnormas {
   justify-content: end;
   padding: 0 8% 5% 0;
 }
+
 .normas {
   color: white;
   width: 30rem;
