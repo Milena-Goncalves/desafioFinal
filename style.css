@@ -120,6 +120,7 @@
   transition: background-position 1s;
   width: 80%;
 }
+
 .comece-a-jogar button:hover {
   font-size: 2.25rem;
   padding: 4.5%;
@@ -195,7 +196,6 @@
 
 .main-fundo {
   background-image: url("/star/Retângulo 3.svg");
-  /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -206,7 +206,7 @@
   color: white;
   font-family: "Dosis", sans-serif;
   font-size: 2.5rem;
-  padding: 5% 17% 2%;
+  padding: 10% 17% 2.5%;
 }
 
 .atributos-img-grid {
@@ -245,15 +245,26 @@
 }
 
 .overlay h2 {
-  font-size: 1.25rem;
   font-family: "Work Sans", sans-serif;
 }
 
 .overlay .botao-atributos {
   background: none;
   font-size: 1rem;
-  padding: 1.5% 3%;
+  padding: 2.5% 6%;
   border: 2px solid white;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0) 50%,
+    rgba(119, 136, 153, 0.3) 50%
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.25s;
+}
+
+.overlay button:hover {
+  transform: scale(1.05);
+  background-position: -100% 0;
 }
 
 .img-um-overlay {
@@ -276,17 +287,54 @@
   background: rgba(0, 255, 0, 0.5);
 }
 
+.titulo-grid-um {
+  font-size: 3rem;
+  width: 2rem;
+  padding-bottom: 5%;
+}
+.descricao-guerra {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  width: 22rem;
+  padding-bottom: 3%;
+}
+
+.titulo-grid-dois {
+  font-size: 1.25rem;
+  width: 2rem;
+  padding-bottom: 8%;
+}
+
+.titulo-grid-tres {
+  font-size: 1.25rem;
+  width: 15rem;
+  padding-bottom: 5%;
+}
+
+.titulo-grid-quatro {
+  font-size: 1.25rem;
+  width: 10rem;
+  padding-bottom: 5%;
+}
+
+.descricao {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  padding-bottom: 3%;
+}
+
 .hierarquia {
   width: 100rem;
   padding: 3% 0 0.75% 0;
 }
 
-.divnormas {
+.normas {
   justify-content: end;
   padding: 0 8% 5% 0;
 }
 
-.normas {
+.normas-descricao {
   color: white;
   width: 30rem;
   text-align: right;
@@ -294,36 +342,88 @@
   font-family: "Work Sans", sans-serif;
   font-weight: 100;
 }
+
 .como-jogar {
   font-family: "Work Sans", sans-serif;
   color: white;
   font-size: 2rem;
   padding-bottom: 10%;
 }
+
 .capa-preta {
-  width: 33rem;
-  top: -23rem;
+  width: 30rem;
+  top: -15rem;
   left: 10rem;
 }
 
-.primeiro {
-  font-size: 2rem;
-  /* color: burlywood; */
-  left: 50rem;
-  top: 500%;
-  /* font-family: "Open Sans", sans-serif; */
+.width-30 {
+  width: 30%;
 }
 
-.primeiro button {
-  font-size: 0.8rem;
+.width-70 {
+  width: 70%;
+}
+
+.numeracao {
+  position: relative;
+  justify-content: space-between;
+  top: 5rem;
+  font-size: 2rem;
+}
+
+.numeracao-1,
+.numeracao-2,
+.numeracao-3 {
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+}
+
+.numeracao-1 div,
+.numeracao-2 div,
+.numeracao-3 div {
+  order: 4;
+}
+
+.numeracao h3 {
+  font-weight: 200;
+  font-family: sans-serif;
+  order: -1;
+  margin-bottom: 10%;
+}
+
+.numeracao p {
+  margin-top: 10%;
+  height: 15%;
+}
+
+.numeracao hr {
+  width: 30%;
+  border: 2px solid black;
+}
+
+.num-botao:hover ~ h3 {
+  transition: 1s ease-in-out;
+  font-weight: bold;
+  transform: scale(1.2);
+}
+
+.num-botao:hover ~ h3 ~ div hr {
+  transition: 1s ease-in-out;
+  border: 2px solid red;
+}
+
+.numeracao .num-botao {
   font-family: "Work Sans", sans-serif;
   font-weight: 100;
   background: none;
   background-image: linear-gradient(to right, black 50%, red 50%);
   background-size: 200% 100%;
   transition: background-position 1s;
-  padding: 15% 40%;
+  padding: 5% 10%;
 }
-.primeiro button:hover {
+
+.num-botao:hover {
   background-position: -100% 0;
 }

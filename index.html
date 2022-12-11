@@ -36,7 +36,9 @@
             Baixe o jogo, cadastre seu nome de usuário e comece a interagir com
             mais de um milhão de jogadores
           </p>
-          <button class="botao uppercase">Download</button>
+          <div class="flex flex-center">
+            <button class="botao uppercase">Download</button>
+          </div>
         </div>
         <img
           class="sobre-jogo"
@@ -93,8 +95,8 @@
               alt="Game Star"
             />
             <div class="overlay img-um-overlay">
-              <h2 class="uppercase">Guerra Espacial</h2>
-              <p>
+              <h2 class="titulo-grid-um uppercase">Guerra Espacial</h2>
+              <p class="descricao-guerra">
                 Batalhe no espaço, crie seu esquadrão, junte-se a sua frota.
               </p>
               <button class="botao botao-atributos">Leia Mais</button>
@@ -108,8 +110,8 @@
                 alt="Security Stormtrooper"
               />
               <div class="overlay img-dois-overlay">
-                <h2 class="uppercase">Novos Gráficos</h2>
-                <p>
+                <h2 class="titulo-grid-dois uppercase">Novos Gráficos</h2>
+                <p class="descricao">
                   Uma garantia endossa latentemente multa de acionista, mesmo
                   levando em cosinderação.
                 </p>
@@ -123,8 +125,10 @@
                 alt="Naves de batalha"
               />
               <div class="overlay img-cinco-overlay">
-                <h2 class="uppercase">Partidas Emocionantes</h2>
-                <p>
+                <h2 class="titulo-grid-dois uppercase">
+                  Partidas Emocionantes
+                </h2>
+                <p class="descricao">
                   Participe de batalhas multijogador em equipes 32x32 em locais
                   clássicos dos filmes.
                 </p>
@@ -138,8 +142,10 @@
                 alt="Naves de batalha"
               />
               <div class="overlay img-tres-overlay">
-                <h2 class="uppercase">Domine Caças Estelares</h2>
-                <p>
+                <h2 class="titulo-grid-tres uppercase">
+                  Domine Caças Estelares
+                </h2>
+                <p class="descricao">
                   Assuma o controle de diferentes classes de caças estelares da
                   Nova República e do Império.
                 </p>
@@ -153,8 +159,10 @@
                 alt="Naves de batalha"
               />
               <div class="overlay img-quatro-overlay">
-                <h2 class="uppercase">Uma galáxia em guerra</h2>
-                <p>
+                <h2 class="titulo-grid-quatro uppercase">
+                  Uma galáxia em guerra
+                </h2>
+                <p class="descricao">
                   Lute com os amigos e heróis em diversos planetas de todas as
                   eras de Star Wars
                 </p>
@@ -170,8 +178,8 @@
             alt="Star Wars Hierarquia Game"
           />
         </div>
-        <div class="flex divnormas">
-          <p class="normas">
+        <div class="flex normas">
+          <p class="normas-descricao">
             Em normas especiais sobre o assunto, ressalta-se que a legislação é
             deliberadamente preceito judicial do faturamento dos negócios,
             excluindo o princípio da presunção de inocência.
@@ -182,14 +190,41 @@
         </div>
       </section>
       <div class="flex">
-        <img
-          class="capa-preta relative"
-          src="star/stortm_trooper_capa_preta-removebg-preview@2x.png"
-          alt="Stormtroper Capa Preta"
-        />
-        <div class="primeiro absolute">
-          <h2>01</h2>
-          <button class="botao uppercase">Download</button>
+        <div class="width-30">
+          <img
+            class="capa-preta relative"
+            src="star/stortm_trooper_capa_preta-removebg-preview@2x.png"
+            alt="Stormtroper Capa Preta"
+          />
+        </div>
+
+        <div class="width-70 flex flex-center">
+          <section class="numeracao flex">
+            <div class="numeracao-1 flex">
+              <button class="botao num-botao uppercase">Download</button>
+              <h3>01</h3>
+              <div class="flex flex-center">
+                <hr />
+              </div>
+              <p>Baixe o jogo e crie o nome de usuário</p>
+            </div>
+            <div class="numeracao-2 flex">
+              <button class="botao num-botao uppercase">Escolher</button>
+              <h3>02</h3>
+              <div class="flex flex-center">
+                <hr />
+              </div>
+              <p>Selecione o tipo de jogo</p>
+            </div>
+            <div class="numeracao-3 flex">
+              <button class="botao num-botao uppercase">Explorar</button>
+              <h3>03</h3>
+              <div class="flex flex-center">
+                <hr />
+              </div>
+              <p>Conquista a galáxia</p>
+            </div>
+          </section>
         </div>
       </div>
       <section class="menu-jogar"></section>
