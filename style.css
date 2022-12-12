@@ -75,7 +75,6 @@
 .main-topo {
   background-image: url("star/sta uo robot@2x.png");
   background-color: white;
-  /* background-position: left; */
   background-size: 65rem;
   background-repeat: no-repeat;
   min-height: 185vh;
@@ -292,6 +291,7 @@
   width: 2rem;
   padding-bottom: 5%;
 }
+
 .descricao-guerra {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -324,9 +324,29 @@
   padding-bottom: 3%;
 }
 
+@media screen and (max-width: 480px) {
+  .atributos {
+    flex-direction: column;
+  }
+
+  .img-um,
+  .img-dois,
+  .img-tres,
+  .img-quatro,
+  .img-cinco {
+    width: 100%;
+  }
+
+  .atributos-img-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
 .hierarquia {
-  width: 100rem;
-  padding: 3% 0 0.75% 0;
+  width: 100%;
+  padding: 3% 8% 0.75% 8%;
 }
 
 .normas {
@@ -426,4 +446,96 @@
 
 .num-botao:hover {
   background-position: -100% 0;
+}
+
+@media screen and (max-width: 480px) {
+  .capa-preta {
+    width: 30rem;
+    top: 0;
+    left: -15rem;
+  }
+
+  .numeracao {
+    flex-direction: column;
+  }
+
+  .numeracao-1,
+  .numeracao-2,
+  .numeracao-3 {
+    width: 100%;
+  }
+}
+
+/*footer*/
+
+.background-left {
+  background-color: #ff5a56;
+  width: 60%;
+}
+.left-conteudo {
+  width: 38%;
+  flex-direction: column;
+}
+
+.titulo-aplicativo {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
+  padding: 30% 0 5% 0;
+}
+
+.aplicativo {
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+  margin-top: 10%;
+}
+
+.disponivel-dimensoes {
+  width: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 10%;
+}
+.disponivel-dimensoes:first-child {
+  margin-right: 3.5rem;
+}
+
+.right-conteudo hr {
+  width: 27.3rem;
+  border: 2px solid #d74430;
+}
+.estauo {
+  width: 15rem;
+  margin-top: 3rem;
+}
+
+.politicas .aplicativo:first-child {
+  margin-bottom: -0.85rem;
+}
+
+.politicas .aplicativo:last-child {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.darth-vader {
+  width: 41rem;
+  bottom: 1.5rem;
+  left: 60rem;
+}
+
+.right {
+  background-color: white;
+  justify-content: flex-start;
+  width: 40%;
+  padding-left: 3rem;
+  align-self: end;
+}
+.layout {
+  font-size: 0.65rem;
+  width: 10rem;
+  margin-top: -5rem;
 }
