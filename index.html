@@ -40,33 +40,43 @@
             <button class="botao uppercase">Download</button>
           </div>
         </div>
-        <img
-          class="sobre-jogo"
-          src="star/Grupo sobre o jogo@2x.png"
-          alt="Sobre o Jogo"
-        />
+        <section class="sobre-jogo relative flex">
+          <div class="sobre">
+            <h4 class="relative uppercase">Sobre o jogo</h4>
+            <hr class="relative" />
+            <p class="sobre-jogo-texto relative">
+              Star Wars Battlefront é um jogo eletrônico de tiro em primeira e
+              terceira pessoa, produzido pela DICE e baseado na franquia Star
+              Wars.
+            </p>
+            <p class="sobre-jogo-texto relative">
+              Foi publicado pela Eletronic Arts com a chancela da LucasArts a 17
+              de novembro de 2015 para Microsoft Windows, PlayStation 4 e Xbox
+              One.
+            </p>
+          </div>
+          <div class="sobre-jogo-img">
+            <img
+              class="relative"
+              src="star/star wars frente de batalha@2x.png"
+              alt="Star Wars Banner Frente Batalha"
+            />
+          </div>
+        </section>
         <svg
-          class="linha2"
+          class="linha"
           xmlns="http://www.w3.org/2000/svg"
           width="1502"
           height="5"
           viewBox="0 0 1502 5"
         >
-          <defs>
-            <style>
-              .a {
-                fill: none;
-                stroke: #707070;
-                stroke-width: 5px;
-              }
-            </style>
-          </defs>
-          <line class="a" x2="1502" transform="translate(0 2.5)" />
+          <defs></defs>
+          <line x2="1502" transform="translate(0 2.5)" />
         </svg>
         <img class="lord" src="/star/lord sifh 2@2x.png" alt="Lord Sifh" />
 
         <img class="rey" src="/star/rey star wars@2x.png" alt="Rey Star Wars" />
-        <div class="main-estrutura flex">
+        <div class="main-estrutura flex relative">
           <div class="menu flex flex-column">
             <h2 class="estrutura uppercase">
               Estrutura de <strong>Jogo</strong>
@@ -96,7 +106,7 @@
             />
             <div class="overlay img-um-overlay">
               <h2 class="titulo-grid-um uppercase">Guerra Espacial</h2>
-              <p class="descricao-guerra">
+              <p class="descricao">
                 Batalhe no espaço, crie seu esquadrão, junte-se a sua frota.
               </p>
               <button class="botao botao-atributos">Leia Mais</button>
@@ -110,7 +120,9 @@
                 alt="Security Stormtrooper"
               />
               <div class="overlay img-dois-overlay">
-                <h2 class="titulo-grid-dois uppercase">Novos Gráficos</h2>
+                <h2 class="titulo titulo-grid-dois uppercase">
+                  Novos Gráficos
+                </h2>
                 <p class="descricao">
                   Uma garantia endossa latentemente multa de acionista, mesmo
                   levando em cosinderação.
@@ -125,7 +137,7 @@
                 alt="Naves de batalha"
               />
               <div class="overlay img-cinco-overlay">
-                <h2 class="titulo-grid-dois uppercase">
+                <h2 class="titulo titulo-grid-dois uppercase">
                   Partidas Emocionantes
                 </h2>
                 <p class="descricao">
@@ -142,7 +154,7 @@
                 alt="Naves de batalha"
               />
               <div class="overlay img-tres-overlay">
-                <h2 class="titulo-grid-tres uppercase">
+                <h2 class="titulo titulo-grid-tres uppercase">
                   Domine Caças Estelares
                 </h2>
                 <p class="descricao">
@@ -159,7 +171,7 @@
                 alt="Naves de batalha"
               />
               <div class="overlay img-quatro-overlay">
-                <h2 class="titulo-grid-quatro uppercase">
+                <h2 class="titulo titulo-grid-quatro uppercase">
                   Uma galáxia em guerra
                 </h2>
                 <p class="descricao">
@@ -203,7 +215,7 @@
             <div class="numeracao-1 flex">
               <button class="botao num-botao uppercase">Download</button>
               <h3>01</h3>
-              <div class="flex flex-center">
+              <div class="flex flex-center relative">
                 <hr />
               </div>
               <p>Baixe o jogo e crie o nome de usuário</p>
@@ -211,7 +223,7 @@
             <div class="numeracao-2 flex">
               <button class="botao num-botao uppercase">Escolher</button>
               <h3>02</h3>
-              <div class="flex flex-center">
+              <div class="flex flex-center relative">
                 <hr />
               </div>
               <p>Selecione o tipo de jogo</p>
@@ -219,7 +231,7 @@
             <div class="numeracao-3 flex">
               <button class="botao num-botao uppercase">Explorar</button>
               <h3>03</h3>
-              <div class="flex flex-center">
+              <div class="flex flex-center relative">
                 <hr />
               </div>
               <p>Conquista a galáxia</p>
@@ -230,7 +242,6 @@
     </main>
     <footer>
       <section class="footer flex relative">
-        <!-- <img src="star/Retângulo 18.svg" alt="" /> -->
         <div class="background-left flex flex-center">
           <div class="left-conteudo flex">
             <h2 class="uppercase titulo-aplicativo">
@@ -254,8 +265,14 @@
                 alt=""
               />
             </div>
-            <hr />
-            <img class="estauo" src="star/esta uo@2x.png" alt="" />
+            <hr class="linha-footer" />
+            <div class="flex flex-center">
+              <img
+                class="estauo"
+                src="star/esta uo@2x.png"
+                alt="Logo Star Wars"
+              />
+            </div>
             <div class="politicas">
               <p class="aplicativo">
                 Políticas internacionais, na verdade significa um funcional tipo
@@ -271,10 +288,10 @@
         <img
           class="darth-vader absolute"
           src="star/darth_vader-sem fundo@2x.png"
-          alt=""
+          alt="Imagem do Darth Vader"
         />
         <div class="right flex">
-          <p class="layout flex">
+          <p class="layout flex relative">
             Layout produzido por Vai na Web para fins exclusivamente
             educacionais. Referências:
             https//in.pinterest.com/pin/337347828330561824/
